@@ -1,3 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(ottosei CXX)
 add_subdirectory(src)
+INSTALL(TARGETS ottosei RUNTIME DESTINATION usr/bin)
+INSTALL(FILES usr/share/serene/ottosei/ottosei.jpeg DESTINATION usr/share/serene/ottosei/ PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
+INSTALL(FILES usr/share/serene/ottosei/ottosei1.mp3 DESTINATION usr/share/serene/ottosei/ PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
+INSTALL(FILES usr/share/serene/ottosei/ottosei2.mp3 DESTINATION usr/share/serene/ottosei/ PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
