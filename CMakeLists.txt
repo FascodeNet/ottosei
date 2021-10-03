@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 project(ottosei CXX)
+add_compile_options (-fdiagnostics-color=always)
 add_subdirectory(src)
 INSTALL(TARGETS ottosei RUNTIME DESTINATION usr/bin)
 INSTALL(FILES usr/share/serene/ottosei/ottosei.jpeg DESTINATION usr/share/serene/ottosei/ PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
